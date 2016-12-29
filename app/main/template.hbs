@@ -1,0 +1,57 @@
+<div class="fp-wrapper">
+  <div class="fp-sidebar-left">
+    {{#link-to 'main' class='fp-sidebar-left-header' tagName='div'}}
+    <div class="fp-sidebar-left-header-logo">finpal</div>
+    {{/link-to}}
+    <nav class="fp-sidebar-left-navigation">
+      <ul>
+        <li>
+          {{#link-to 'main'}}Overview{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'main.transactions'}}Transactions (2){{/link-to}}
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="javascript:void(0)">Transfers (2)</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Invoices (1)</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="javascript:void(0)">Manage cards</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Manage accounts</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="javascript:void(0)">Team</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Integrations</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Settings</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0)" class="fp-btn fp-block-center">Upgrade account</a>
+    </nav>
+  </div>
+  <main class="fp-main">
+    <div class="fp-main-header"></div>
+    <div class="fp-main-content">
+      {{outlet}}
+    </div>
+  </main>
+  <div class="fp-sidebar-right">
+    <div class="fp-sidebar-right-header"></div>
+    <div class="fp-sidebar-right-content">
+      <div class="fp-hint fp-block-center">Click on one or several transactions to see details</div>
+    </div>
+  </div>
+</div>

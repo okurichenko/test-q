@@ -1,0 +1,13 @@
+.fp-btn {
+  border: 1px solid $border-color-button-default;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: $text-color-button-default;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+}

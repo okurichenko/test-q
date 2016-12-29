@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>DD-MM-YYYY</th>
+      <th>Counterparty Name</th>
+      <th>Payment type</th>
+      <th class="fp-text-align-right">Amount</th>
+      <th>[]</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |transaction|}}
+      <tr>
+        <td>{{moment-format transaction.createdAt 'DD-MM-YYYY'}}</td>
+        <td>{{transaction.counterpartyName}}</td>
+        <td>{{transaction.operationType}}</td>
+        <td class="fp-text-align-right">{{transaction.amount}} {{transaction.currency}}</td>
+        <td>[]</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
